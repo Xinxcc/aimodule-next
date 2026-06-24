@@ -1,0 +1,14 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.1
+websockets==14.1
+python-multipart==0.0.20
+onnxruntime==1.20.1
+pillow==11.0.0
+numpy==2.2.1
+# packaging the offline sidecar:
+#   pyinstaller --onefile -n aimodule-backend app/main.py
+# compute layer (installed from local wheels for offline builds):
+#   torch  (CUDA build, bundled)
+#   <compute-backend>-py3-none-any.whl   (installed from a local wheel)

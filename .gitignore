@@ -1,0 +1,43 @@
+# Secrets & config
+.env
+*.env
+*.key
+*.pem
+secrets/
+config.local.*
+
+# Data / models / knowledge bases (never commit company or client data)
+knowledge_sources/
+data/
+datasets/
+*.csv
+*.xlsx
+*.mat
+*.h5
+*.ckpt
+*.onnx
+*.pt
+*.pth
+models/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Node / frontend
+node_modules/
+dist/
+build/
+.next/
+
+# Rust / Tauri
+target/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
